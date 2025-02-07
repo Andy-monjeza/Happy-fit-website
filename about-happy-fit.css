@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+}
+
+/
+
+/* Section Styling */
+section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color:silver;
+    font-size: 2rem;
+    margin-bottom:35px;
+    margin-top:30px;
+    ;
+}
+
+/* Mission Section */
+.mission ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.mission ul li {
+    background:darkgreen;
+    color: white;
+    margin: 8px auto;
+    padding: 12px;
+    border-radius: 5px;
+    max-width: 500px;
+    font-weight: bold;
+}
+
+/* Why Choose Us Section */
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: white;
+    border: 2px solid #27AE60;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.feature:hover {
+    background: #27AE60;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="happy-fit.js"></script>
+    <link href="happy-fit.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Happy Fit</title>
+    <style>
+        
+
+        .contact-container {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 370px;
+            text-align: center;
+            margin-left:30px;
+            margin-top:25px;
+            margin-bottom:150px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        .btn {
+            background:#3D483E; 
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            font-weight:bold;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background:green;
+        }
+    </style>
+</head>
+<body style="background-color:lightgrey">
+    <header class="header">
+    <div class="logo">
+    <img class="logo-img" src="happy-fit-web/happy-fit-logo.jpg" alt="Logo">
+  </div>
+  <div class="burger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for burger icon -->     </div>
+  <nav id="dropdown-menu">
+         <div class="dropdown-menu">
+  <span class="close-icon" onclick="closeMenu()">&times;</span>
+ 
+  
+   <ul>
+                <li><a href="happy-fit.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="happy-fits-services.html">Services</a></li>
+                
+            </ul>
+        </nav>
+</header>
+<div class="infoDiv">
+    <img class="aboutImg" src="happy-fit-web/happy-fit-logo.jpg" alt="">
+    
+</div>
+    <div class="contact-container">
+        <form action="mailto: huwatimo1904@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section business-info">
+            <h2>Happy Fit</h2>
+            <p>📍 Location:Lilongwe</p>
+            <p>📧 Email: huwatimo1904@gmail.com</p>
+            <p>📞 Phone: +265 981 50 48 49</p>
+        </div>
+
+        <div class="footer-section nav-links">
+            <h4>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="happy-fits-services.html">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <a href="https://facebook.com/happyfit" target="_blank">Facebook</a> |
+            <a href="https://instagram.com/happyfit" target="_blank">Instagram</a> |
+            <a href="https://wa.me/YOUR_NUMBER" target="_blank">WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Happy Fit. All Rights Reserved.</p>
+        <p>Designed by <span>Andy Monjeza.k</span></p>
+    </div>
+</footer>
+</body>
+</html>
+</body>
+</html>

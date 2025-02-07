@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="happy-fit.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+   <script src="happy-fit.js"></script>
+    <meta charset="UTF-8">
+    <title>Happy Fit</title>
+</head>
+
+<body style="
+background-color:lightgrey;">
+  
+
+<header class="header">
+    <div class="logo">
+    <img class="logo-img" src="happy-fit-web/happy-fit-logo.jpg" alt="Logo">
+  </div>
+  <div class="burger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for burger icon -->     </div>
+  <nav id="dropdown-menu">
+         <div class="dropdown-menu">
+  <span class="close-icon" onclick="closeMenu()">&times;</span>
+ 
+  
+   <ul>
+                <li><a href="happy-fit.html">Home</a></li>
+                <li><a href="about-happy-fit.html">About</a></li>
+                <li><a href="happy-fits-services.html">Services</a></li>
+                <li><a href="happy-fit-contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+</header>
+<div class="infoDiv">
+    <img class="aboutImg" src="happy-fit-web/happy-fit-logo.jpg" alt="">
+    <p class="about">
+    |Home specialized in selling high-quality products that aims to provide you with a wide range of premium items that cater to your fashion and accessory needs. Whatever you need, we have it.
+</p>
+
+</div>
+
+
+
+    <div class="products-container">
+    <section class="products-section">
+        <h2 class="top-words">Catalogue</h2>
+        <div class="products-scroll">
+            <div class="product-item" onclick="showCategory('shoes')">
+                <img src="happy-fit-web/shoes.jpg" alt="Shoes" class="product-icon">
+                <p class="product-name">Shoes</p>
+            </div>
+            <div class="product-item" onclick="showCategory('accessories')">
+                <img src="happy-fit-web/accessories.jpg" alt="Accessories" class="product-icon">
+                <p class="product-name">Accessories</p>
+            </div>
+            <div class="product-item" onclick="showCategory('collectibles')">
+                <img src="happy-fit-web/collectibles.jpg" alt="Collectibles" class="product-icon">
+                <p class="product-name">Collectibles</p>
+            </div>
+            <div class="product-item" onclick="showCategory('clothing')">
+                <img src="happy-fit-web/clothing.jpg" alt="Clothing" class="product-icon">
+                <p class="product-name">Clothing</p>
+            </div>
+            <div class="product-item" onclick="showCategory('sports-kits')">
+                <img src="happy-fit-web/sporting-kits.jpg" alt="Sporting Kits" class="product-icon">
+                <p class="product-name">Sporting Kits</p>
+            </div>
+            <div class="product-item" onclick="showCategory('perfumes')">
+                <img src="happy-fit-web/perfumes.jpg" alt="Perfumes" class="product-icon">
+                <p class="product-name">Perfumes</p>
+            </div>
+            <div class="product-item" onclick="showCategory('jewelry')">
+                <img src="happy-fit-web/jewellery.jpg" alt="Jewelry" class="product-icon">
+                <p class="product-name">Jewelry</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Subcategories Section -->
+<div id="category-container">
+    <div class="category-content" id="shoes">
+        <p class="category">Shoes:</p>
+        <a href="nike-shoes.html"><button class="product-button">Nike</button></a>
+        <a href="jordans.html"><button class="product-button">Jordans</button></a>   
+        <a href="Adidas.html"> <button class="product-button">Adidas</button></a>
+        <a href="mens-shoes.html"><button class="product-button">Men's Shoes</button></a>
+        <a href="womens-shoes.html"><button class="product-button">Women's Shoes</button></a>
+        <a href="kids-shoes.html"><button class="product-button">Kids' Shoes</button></a>
+    </div>
+
+    <div class="category-content" id="accessories">
+        <p class="category">Accessories:</p>
+        <a href="happy-fit-watches.html"><button class="product-button">Watches</button></a>
+        <a href="phone-accesories.html"><button class="product-button">Phone Accessories</button></a>
+        <a href="bags.html"><button class="product-button">Bags</button></a>
+    </div>
+
+    <div class="category-content" id="collectibles">
+        <p class="category">Collectibles:</p>
+        <a href="drinkwear.html"><button class="product-button">Drinkwear</button></a>
+        
+    </div>
+
+    <div class="category-content" id="clothing">
+        <p class="category">Clothing:</p>
+        <a href="men-clothing.html"><button class="product-button">Men</button></a>
+        <a href="womens-shoes.html"><button class="product-button">Women</button></a>
+       
+    </div>
+
+    <div class="category-content" id="sports-kits">
+        <p class="category">Sporting Kits:</p>
+        <a href="football.html"><button class="product-button">Onfield kits</button></a>
+       
+    </div>
+
+    <div class="category-content" id="perfumes">
+        <p class="category">Perfumes:</p>
+      
+        <a href="womens-perfumes.html"><button class="product-button">Women's Perfumes</button></a>
+        
+    </div>
+
+    <div class="category-content" id="jewelry">
+        <p class="category">Jewelry:</p>
+        
+        <a href="bracelets.html"><button class="product-button">Necklaces & bracelets</button></a>
+        
+    </div>
+</div>
+<h1 class="top-words">Top Sellers:</h1>
+<section class="top-picks">
+    <div style="background: url('top-picks/stanley-cup.jpg') no-repeat center center/cover;" class="top-item">
+        <h2 class="top-h2">STANLEY TUMBLERS</h2>
+        <button class="rounded-btn" onclick="showAbout(0)">About</button>
+    </div>
+    <div style="background: url('top-picks/top-j4.jpg') no-repeat center center/cover;" class="top-item">
+        <h2 class="top-h2">JORDAN 4'S</h2>
+        <button class="rounded-btn" onclick="showAbout(1)">About</button>
+    </div>
+    <div style="background: url('top-picks/top-crocks.jpg') no-repeat center center/cover;" class="top-item">
+        <h2 class="top-h2">CROCS</h2>
+        <button class="rounded-btn" onclick="showAbout(2)">About</button>
+    </div>
+    <div style="background: url('top-picks/top-AF1.jpg') no-repeat center center/cover;" class="top-item">
+        <h2 class="top-h2">NIKE'S AF1's</h2>
+        <button class="rounded-btn" onclick="showAbout(3)">About</button>
+    </div>
+    <div style="background: url('top-picks/top-heels.jpg') no-repeat center center/cover;" class="top-item">
+        <h2 class="top-h2">HEELS</h2>
+        <button class="rounded-btn" onclick="showAbout(4)">About</button>
+    </div>
+</section>
+
+<!-- Product Info Boxes -->
+<div class="top-item-info" id="info-0">
+    <h2 class="product-title">Stanley Quencher H2.0 Flowstate Tumbler</h2>
+    <p class="product-description">
+        Keeps drinks hot or cold for hours. Made with double-wall vacuum insulation, ensuring temperature retention.  
+        Durable, stylish, and perfect for daily use, travel, and outdoor adventures.
+    </p><br>
+    <p class="product-price">Price: <span>$45.99</span></p>
+</div>
+<div class="top-item-info" id="info-1">
+    <h2 class="product-title">Air Jordan 4 Retro</h2>
+    <p class="product-description">
+        A timeless sneaker with premium materials, iconic mesh detailing, and visible Air cushioning.  
+        Designed for comfort and style, perfect for both casual wear and collectors.
+    </p><br>
+    <p class="product-price">Price: <span>$220.00</span></p>
+</div>
+<div class="top-item-info" id="info-2">
+    <h2 class="product-title">Classic Crocs Clog</h2>
+    <p class="product-description">
+        Lightweight, comfortable, and versatile footwear designed for everyday wear.  
+        Features a cushioned footbed, ventilation ports for breathability, and a slip-on design for convenience.  
+        Perfect for casual outings, lounging, and outdoor adventures.
+    </p><br>
+    <p class="product-price">Price: <span>$49.99</span></p>
+</div>
+<div class="top-item-info" id="info-3">
+    <h2 class="product-title">Nike Air Force 1 Low</h2>
+    <p class="product-description">
+        A classic sneaker with a clean, minimalist design. Crafted with premium leather for durability and comfort.  
+        Features the signature Air cushioning for all-day comfort and a rubber outsole for excellent grip.  
+        Perfect for both casual and streetwear styles.
+    </p><br>
+    <p class="product-price">Price: <span>$90.00</span></p>
+</div>
+<div class="top-item-info" id="info-4">
+    <h2 class="product-title">Classic High Heels</h2>
+    <p class="product-description">
+        Elegant and stylish high heels, perfect for formal occasions and evening wear.  
+        Made with high-quality materials, these shoes offer both comfort and sophistication with a sleek design.  
+        A must-have for every wardrobe, designed to elevate your look.
+    </p><br>
+    <p class="product-price">Price: <span>$79.99</span></p>
+</div>
+
+
+    <section class="delivery">
+    <h2>Delivery Information</h2>
+    <p>At <strong>Happy Fit</strong>, we ensure fast and reliable delivery of your orders through some of  our most trusted couriers :</p>
+    
+    <div class="delivery-options">
+        <div class="courier">
+            <h3>CTS</h3>
+            <p>Secure and efficient nationwide delivery.</p>
+        </div>
+        <div class="courier">
+            <h3>Speed Courier</h3>
+            <p>Fast shipping for urgent orders.</p>
+        </div>
+        <div class="courier">
+            <h3>Post Office</h3>
+            <p>An affordable and accessible delivery option.</p>
+        </div>
+        <div class="courier">
+            <h3>AXA</h3>
+            <p>Reliable service with excellent tracking features.</p>
+        </div>
+    </div>
+
+    <div class="delivery-details">
+        <h3>Delivery Time & Costs</h3>
+        <ul>
+            <li>Delivery times vary depending on your location and the chosen courier.</li>
+            <li>Shipping costs will be calculated at checkout.</li>
+        </ul>
+        <p>For any delivery-related inquiries, feel free to <a href="happy-fit-contact.html">contact us</a>.</p>
+    </div>
+</section>
+    
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section business-info">
+            <h2>Happy Fit</h2>
+            <p>📍 Location:Lilongwe</p>
+            <p>📧 Email: huwatimo1904@gmail.com</p>
+            <p>📞 Phone: +265 981 50 48 49</p>
+        </div>
+
+        <div class="footer-section nav-links">
+            <h4>Quick Links</h3>
+            <ul>
+                <li><a href="happy-fit.html">Home</a></li>
+                <li><a href="about-happy-fit.html">About Us</a></li>
+                <li><a href="happy-fits-services.html">Services</a></li>
+                <li><a href="happy-fit-contact.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <a href="https://www.facebook.com/share/1Ub3DT6KoV/?mibextid=wwXIfr" target="_blank">Facebook</a> |
+            
+            <a href="https://chat.whatsapp.com/JV7OzNYhCoX1I2lSQl1h5E" target="_blank">WhatsApp</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Happy Fit. All Rights Reserved.</p>
+        <p>Designed by <span>Andy Monjeza.k</span></p>
+    </div>
+</footer>
+</body>
+</html>
