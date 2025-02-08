@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="product-styles.css" rel="stylesheet">
+    <script src="happy-fit.js"></script>
+    <link href="happy-fit.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>happy-fit nike shoes</title>
+</head>
+<body>
+    <header class="header">
+    <div class="logo">
+    <img class="logo-img" src="happy-fit-web/happy-fit-logo.jpg" alt="Logo">
+  </div>
+  
+
+  <div class="burger-icon" onclick="toggleMenu()">
+            &#9776; <!-- Unicode for burger icon -->     </div>
+  <nav id="dropdown-menu">
+       <span class="close-icon" onclick="closeMenu()">&times;</span>
+ 
+            <ul>
+                <li><a href="happy-fit.html">Home</a></li>
+                <li><a href="about-happy-fit.html">About</a></li>
+                <li><a href="happy-fits-services.html">Services</a></li>
+                <li><a href="happy-fit-contact.html">Contact</a></li>
+            </ul>
+        </nav>
+</header>
+<div class="infoDiv">
+    <img class="aboutImg" src="happy-fit-web/happy-fit-logo.jpg" alt="">
+    
+</div>
+
+
+
+    <!-- Popup Structure -->
+    <div id="popup-overlay">
+        <div id="popup-box">
+            <button id="close-popup" onclick="closePopup()">×</button>
+            <img id="popup-logo" src="happy-fit-web/happy-fit-logo.jpg" alt="Logo"> <!-- Replace with your logo path -->
+            <p>Nothing here yet.</p>
+        </div>
+    </div>
+
+    <script>
+        
+// Show popup when the page loads
+window.onload = function () {
+    let popup = document.getElementById("popup-overlay");
+    popup.style.visibility = "visible";
+    popup.style.opacity = "1";
+};
+
+// Function to close the popup
+function closePopup() {
+    let popup = document.getElementById("popup-overlay");
+    popup.style.opacity = "0";
+    setTimeout(() => {
+        popup.style.visibility = "hidden";
+    }, 300);
+}
+    </script>
+
+</body>
+</html>
