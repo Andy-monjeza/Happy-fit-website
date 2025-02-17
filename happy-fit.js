@@ -49,3 +49,10 @@ function showAbout(index) {
     }
    
 }
+function showGallery(galleryId) {
+    document.getElementById(galleryId).classList.add("active");
+}
+
+function closeGallery() {
+    document.querySelector(".gallery.active").classList.remove("active");
+}
