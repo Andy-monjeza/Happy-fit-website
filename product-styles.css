@@ -5,16 +5,6 @@
     margin: 20px;           
 }
 
-.item-listed {
-    display: flex; /* Allows image and info to be side by side */
-    align-items: center;
-    border: 1px solid #ddd;   
-    padding: 15px;             
-    border-radius: 8px;   
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
-    background-color: #fff;   
-    width: 350px; /* Adjust to your needs */
-}
 
 .image-container {
     width: 120px; /* Smaller image */
@@ -57,7 +47,7 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-    width: 350px;
+    width:98vw;
     transition: transform 0.3s ease, height 0.3s ease;
 }
 
