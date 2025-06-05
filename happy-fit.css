@@ -58,7 +58,7 @@ body {
     justify-content:space-between;
     display: none; 
     position: absolute;
-    top: 0;
+    top: 2px;
     right: 0;
     background-color:rgba (0,0,0,0.5);
     backdrop-filter:blur(8px);
