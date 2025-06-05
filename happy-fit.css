@@ -60,14 +60,19 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    background-color:rgba (0,0,0,0 5);
-    backdrop-filter:blur(10px);
-    -webkit-backdrop-filter:blur(10px);
+    background-color:rgba (0,0,0,0.5);
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
     width:230px;
     height:100vh;
     padding-top:100px;
-    border-radius: 5px;
+    border-radius: 20px 0px 10px 2px;
 }
+.icon{
+   margin-right: 12px;
+   
+}
+
 .close-icon {
   position: absolute;
   top: 30px;
