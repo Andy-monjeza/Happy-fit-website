@@ -60,7 +60,7 @@ body {
     position: absolute;
     top: 2px;
     right: 0;
-    background-color:rgba (0,0,0,0.5);
+    background-color:black;
     backdrop-filter:blur(8px);
     -webkit-backdrop-filter:blur(8px);
     width:230px;
